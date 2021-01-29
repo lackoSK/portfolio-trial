@@ -7,7 +7,6 @@ export default function Home() {
         <div className="bg-dark min-h-screen">
             <Head>
                 <title>Page</title>
-                <link rel="icon" href="/favicon.ico"/>
             </Head>
 
             <section className="relative min-h-screen border-b border-darkgray">
@@ -22,7 +21,6 @@ export default function Home() {
                     <path d="M-3 55.5V76.5L352.5 309L173.5 586H202.5L375.5 301.5L-3 55.5Z" fill="#3D61E1"/>
                     <path d="M399 285.5L-9.5 27.5V0L420.5 276.5L258 586H242.5L399 285.5Z" fill="#3D61E1"/>
                 </svg>
-
 
                 <div className="container mx-auto z-40">
                     <Navbar/>
@@ -44,7 +42,8 @@ export default function Home() {
             </section>
 
             <section className="mt-16 md:mt-20 xl:mt-24 relative">
-                <svg className="absolute right-0 top-36 hidden 2xl:block" width="409" height="370" viewBox="0 0 409 370" fill="none"
+                <svg className="absolute right-0 top-36 hidden 2xl:block" width="409" height="370" viewBox="0 0 409 370"
+                     fill="none"
                      xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M186.735 20.7779L586.437 337.257L547.525 334.645L185.094 45.2229L36.4632 325.899L20.603 315.814L186.735 20.7779Z"
@@ -207,9 +206,7 @@ export default function Home() {
                 </div>
             </section>
 
-            <footer className="mt-12">
-                <Footer/>
-            </footer>
+            <Footer/>
         </div>
     )
 }

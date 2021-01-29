@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Footer() {
     return (
-        <nav className="container mx-auto px-8 xl:px-0 py-10">
+        <footer className="mt-12 container mx-auto px-8 xl:px-0 py-10">
             <div className="md:flex justify-between items-center text-center ">
                 <a href="#" className="text-white text-2xl font-normal font-primary items-start">Ryan
                     Devoe</a>
@@ -38,6 +38,6 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-        </nav>
+        </footer>
     )
 }

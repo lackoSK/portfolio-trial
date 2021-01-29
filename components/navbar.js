@@ -14,11 +14,7 @@ export default function Navbar() {
                     event => {
                         const element = document.getElementById("mobile-nav");
 
-                        if (element.classList.contains("hidden")) {
-                            element.classList.remove("hidden");
-                        } else {
-                            element.classList.add("hidden");
-                        }
+                        element.classList.toggle("hidden")
                     }
                 } className="md:hidden">
                     <a href="#" className="relative top-1.5">
@@ -30,10 +26,10 @@ export default function Navbar() {
                     </a>
                 </div>
             </div>
-            <div id='mobile-nav' className="text-right hidden">
+            <div id='mobile-nav' className="text-center hidden">
                 <ul className="py-8">
                     <li><a href="#"
-                           className="mt-2 text-primary transition text-xl font-medium font-secondary algin-middle">Contact
+                           className="mt-2 text-white transition text-xl font-medium font-secondary">Contact
                         Me</a></li>
                 </ul>
             </div>
