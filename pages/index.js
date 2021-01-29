@@ -6,12 +6,25 @@ export default function Home() {
     return (
         <div className="bg-dark min-h-screen">
             <Head>
-                <title>Create Next App</title>
+                <title>Page</title>
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
 
             <section className="relative min-h-screen border-b border-darkgray">
-                <div className="container mx-auto">
+                <svg className="absolute right-0  h-1/4 xl:h-1/2" viewBox="0 0 187 510" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 358L89.5 -23.5H110L39 349.5L256.5 489.5V510L0 358Z" fill="#3D61E1"/>
+                    <path d="M76 329.5L131.5 -11.5H152L120 329.5L214.5 376.5V405.5L76 329.5Z" fill="#3D61E1"/>
+                </svg>
+                <svg className="absolute bottom-0.5 h-1/4 md:h-1/2" viewBox="0 0 421 586" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path d="M296.5 311L-18 132.5V96.5L327.5 311L142 586H123L296.5 311Z" fill="#3D61E1"/>
+                    <path d="M-3 55.5V76.5L352.5 309L173.5 586H202.5L375.5 301.5L-3 55.5Z" fill="#3D61E1"/>
+                    <path d="M399 285.5L-9.5 27.5V0L420.5 276.5L258 586H242.5L399 285.5Z" fill="#3D61E1"/>
+                </svg>
+
+
+                <div className="container mx-auto z-40">
                     <Navbar/>
                     <header className="mt-20 md:mt-24 2xl:mt-36 text-center">
                         <p className="font-primary font-normal text-white tracking-huge text-xl">RYAN DEVOE</p>
@@ -30,7 +43,19 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="mt-16 md:mt-20 xl:mt-24">
+            <section className="mt-16 md:mt-20 xl:mt-24 relative">
+                <svg className="absolute right-0 top-36 hidden 2xl:block" width="409" height="370" viewBox="0 0 409 370" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M186.735 20.7779L586.437 337.257L547.525 334.645L185.094 45.2229L36.4632 325.899L20.603 315.814L186.735 20.7779Z"
+                        fill="#3D61E1"/>
+                    <path
+                        d="M70.018 333.664L53.555 332.559L188.873 71.034L527.934 335.335L513.128 346.869L192.955 92.3552L70.018 333.664Z"
+                        fill="#3D61E1"/>
+                    <path
+                        d="M108.007 320.178L93.6735 317.211L193.906 122.988L461.681 336.901L446.309 349.4L197.488 144.275L108.007 320.178Z"
+                        fill="#3D61E1"/>
+                </svg>
                 <div className="container px-8 xl:px-0 mx-auto">
                     <div className="flex flex-wrap">
                         <div className="w-full lg:w-5/12 lg:px-4">
@@ -103,7 +128,7 @@ export default function Home() {
                             </p>
                         </div>
                     </div>
-                    <main className="mt-14 md:mt-20 xl:mt-28">
+                    <main className="mt-14 md:mt-20 xl:mt-28 relative">
                         <div className="grid grid-cols-1 lg:grid-cols-3 gap-14">
                             <div className="ring-12 ring-semigray">
                                 <div className="relative">
@@ -119,15 +144,17 @@ export default function Home() {
                                         }
                                     }>
                                         <img src="https://via.placeholder.com/250x150" alt="?" width="100%"
-                                            height="auto"/>
-                                        <div id="img-desc-1" className="hidden absolute bottom-0 w-full h-24 text-center bg-black opacity-50 pt-4">
+                                             height="auto"/>
+                                        <div id="img-desc-1"
+                                             className="hidden absolute bottom-0 w-full h-24 text-center bg-black opacity-50 pt-4">
                                             <h2 className="text-white font-secondary text-sm">HTML, CSS, JS</h2>
                                             <h1 className="mt-1 text-white font-secondary font-medium text-base">Dashboard
                                                 for digital agency</h1>
                                         </div>
                                     </a>
                                 </div>
-                            </div>                            <div className="ring-12 ring-semigray">
+                            </div>
+                            <div className="ring-12 ring-semigray">
                                 <div className="relative">
                                     <a href="#" onMouseOver={
                                         event => {
@@ -141,8 +168,9 @@ export default function Home() {
                                         }
                                     }>
                                         <img src="https://via.placeholder.com/250x150" alt="?" width="100%"
-                                            height="auto"/>
-                                        <div id="img-desc-2" className="hidden absolute bottom-0 w-full h-24 text-center bg-black opacity-50 pt-4">
+                                             height="auto"/>
+                                        <div id="img-desc-2"
+                                             className="hidden absolute bottom-0 w-full h-24 text-center bg-black opacity-50 pt-4">
                                             <h2 className="text-white font-secondary text-sm">HTML, CSS, JS</h2>
                                             <h1 className="mt-1 text-white font-secondary font-medium text-base">Dashboard
                                                 for digital agency</h1>
